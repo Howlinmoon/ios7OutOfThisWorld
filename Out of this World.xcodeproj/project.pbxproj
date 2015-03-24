@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		963B0EF11AC1CCC900CE5E31 /* AstronomicalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 963B0EF01AC1CCC900CE5E31 /* AstronomicalData.m */; };
 		96A9F7E31AC07615006F8C3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A9F7E21AC07615006F8C3F /* Foundation.framework */; };
 		96A9F7E51AC07615006F8C3F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A9F7E41AC07615006F8C3F /* CoreGraphics.framework */; };
 		96A9F7E71AC07615006F8C3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A9F7E61AC07615006F8C3F /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		963B0EEF1AC1CCC900CE5E31 /* AstronomicalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AstronomicalData.h; sourceTree = "<group>"; };
+		963B0EF01AC1CCC900CE5E31 /* AstronomicalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AstronomicalData.m; sourceTree = "<group>"; };
 		96A9F7DF1AC07615006F8C3F /* Out of this World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Out of this World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A9F7E21AC07615006F8C3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		96A9F7E41AC07615006F8C3F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -126,6 +129,8 @@
 		96A9F7E91AC07615006F8C3F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				963B0EEF1AC1CCC900CE5E31 /* AstronomicalData.h */,
+				963B0EF01AC1CCC900CE5E31 /* AstronomicalData.m */,
 				96A9F7EA1AC07615006F8C3F /* Out of this World-Info.plist */,
 				96A9F7EB1AC07615006F8C3F /* InfoPlist.strings */,
 				96A9F7EE1AC07615006F8C3F /* main.m */,
@@ -253,6 +258,7 @@
 				96A9F81C1AC07941006F8C3F /* OWOuterSpaceTableViewController.m in Sources */,
 				96A9F7F31AC07615006F8C3F /* OWAppDelegate.m in Sources */,
 				96A9F7EF1AC07615006F8C3F /* main.m in Sources */,
+				963B0EF11AC1CCC900CE5E31 /* AstronomicalData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +465,7 @@
 				96A9F8131AC07615006F8C3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96A9F8141AC07615006F8C3F /* Build configuration list for PBXNativeTarget "Out of this WorldTests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +474,7 @@
 				96A9F8161AC07615006F8C3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
