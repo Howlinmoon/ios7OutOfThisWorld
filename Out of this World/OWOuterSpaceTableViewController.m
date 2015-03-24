@@ -61,6 +61,16 @@
     NSString *blueString = [myDictionary objectForKey:@"ocean color"];
     NSLog(@"ocean color = %@", blueString);
     
+    // converting a primitive numbers into objects
+    NSNumber *myNumber = [NSNumber numberWithInt: 5];
+    NSLog(@"NSNumber = %@", myNumber);
+    float oldFloat = 3.14;
+    NSNumber *floatyNumber = [NSNumber numberWithFloat:oldFloat];
+    NSLog(@"New floaty number: %@", floatyNumber);
+    // a short cut
+    NSLog(@"This is an NSNumber: %@",@42);
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
