@@ -58,7 +58,8 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    cell.textLabel.text = @"Woah - my first tableview!";
+    //cell.textLabel.text = @"Woah - my first tableview!";
+    cell.textLabel.text = [NSString stringWithFormat:@"Row %i", indexPath.row];
     
     return cell;
 }
