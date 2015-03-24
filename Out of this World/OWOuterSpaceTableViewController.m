@@ -44,12 +44,16 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 3;
+    if (section == 0) {
+        return 3;
+    } else {
+        return 2;
+    }
 }
 
 
@@ -60,6 +64,11 @@
     // Configure the cell...
     //cell.textLabel.text = @"Woah - my first tableview!";
     cell.textLabel.text = [NSString stringWithFormat:@"Row %i", indexPath.row];
+    if (indexPath.section == 0) {
+        cell.backgroundColor = [UIColor redColor];
+    } else {
+        cell.backgroundColor = [UIColor blueColor];
+    }
     
     return cell;
 }
