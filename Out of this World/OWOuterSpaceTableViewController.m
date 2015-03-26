@@ -32,7 +32,8 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.planets = [[NSMutableArray alloc] init];
+
+    //self.planets = [[NSMutableArray alloc] init];
     NSString *planet1 = @"Mercury";
     NSString *planet2 = @"Venus";
     NSString *planet3 = @"Earth";
@@ -42,6 +43,7 @@
     NSString *planet7 = @"Uranus";
     NSString *planet8 = @"Neptune";
     
+/*
     [self.planets addObject:planet1];
     [self.planets addObject:planet2];
     [self.planets addObject:planet3];
@@ -50,6 +52,10 @@
     [self.planets addObject:planet6];
     [self.planets addObject:planet7];
     [self.planets addObject:planet8];
+*/
+    
+    self.planets = [[NSMutableArray alloc] initWithObjects:planet1, planet2, planet3, planet4, planet5, planet6, planet7, planet8, nil];
+
     
     NSMutableDictionary *myDictionary = [[NSMutableDictionary alloc]init];
     NSString *firstColor = @"red";
