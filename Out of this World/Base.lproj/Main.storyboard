@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="c0W-N2-eX9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14D113c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="19s-5Y-fT2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Outer Space Table View Controller-->
+        <!--Outer Space Table View Controller - Planets-->
         <scene sceneID="Vj7-nU-QCL">
             <objects>
                 <tableViewController id="c0W-N2-eX9" customClass="OWOuterSpaceTableViewController" sceneMemberID="viewController">
@@ -14,7 +14,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="ef1-4z-wWq" detailTextLabel="dGQ-iT-omB" style="IBUITableViewCellStyleSubtitle" id="dz7-gh-6yl">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dz7-gh-6yl" id="WOr-bE-d1y">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -43,8 +43,27 @@
                             <outlet property="delegate" destination="c0W-N2-eX9" id="DET-tG-5Pk"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Planets" id="sN9-VH-qkm"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QbR-kL-POt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="861" y="149"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FSZ-bq-nsz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="19s-5Y-fT2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lE9-fJ-sQR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="c0W-N2-eX9" kind="relationship" relationship="rootViewController" id="v0f-PQ-l4y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3cc-oO-kPo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="335" y="149"/>
         </scene>
