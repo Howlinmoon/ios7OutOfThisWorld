@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9638638C1AC6FA80008A790E /* OWSpaceImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9638638B1AC6FA80008A790E /* OWSpaceImageViewController.m */; };
 		963B0EF11AC1CCC900CE5E31 /* AstronomicalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 963B0EF01AC1CCC900CE5E31 /* AstronomicalData.m */; };
 		965AED1C1AC4697A007ED797 /* Earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 965AED121AC4697A007ED797 /* Earth.jpg */; };
 		965AED1D1AC4697A007ED797 /* EinsteinRing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 965AED131AC4697A007ED797 /* EinsteinRing.jpg */; };
@@ -46,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9638638A1AC6FA80008A790E /* OWSpaceImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWSpaceImageViewController.h; sourceTree = "<group>"; };
+		9638638B1AC6FA80008A790E /* OWSpaceImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWSpaceImageViewController.m; sourceTree = "<group>"; };
 		963B0EEF1AC1CCC900CE5E31 /* AstronomicalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AstronomicalData.h; sourceTree = "<group>"; };
 		963B0EF01AC1CCC900CE5E31 /* AstronomicalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AstronomicalData.m; sourceTree = "<group>"; };
 		965AED121AC4697A007ED797 /* Earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Earth.jpg; sourceTree = "<group>"; };
@@ -160,6 +163,8 @@
 				965AED281AC469E1007ED797 /* OWSpaceObject.m */,
 				96A9F7F21AC07615006F8C3F /* OWAppDelegate.m */,
 				96A9F7F41AC07615006F8C3F /* Main.storyboard */,
+				9638638A1AC6FA80008A790E /* OWSpaceImageViewController.h */,
+				9638638B1AC6FA80008A790E /* OWSpaceImageViewController.m */,
 				96A9F81A1AC07941006F8C3F /* OWOuterSpaceTableViewController.h */,
 				96A9F81B1AC07941006F8C3F /* OWOuterSpaceTableViewController.m */,
 				96A9F7FA1AC07615006F8C3F /* Images.xcassets */,
@@ -313,6 +318,7 @@
 				96A9F7F31AC07615006F8C3F /* OWAppDelegate.m in Sources */,
 				96A9F7EF1AC07615006F8C3F /* main.m in Sources */,
 				963B0EF11AC1CCC900CE5E31 /* AstronomicalData.m in Sources */,
+				9638638C1AC6FA80008A790E /* OWSpaceImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

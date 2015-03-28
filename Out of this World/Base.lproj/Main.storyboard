@@ -52,10 +52,10 @@
             </objects>
             <point key="canvasLocation" x="861" y="149"/>
         </scene>
-        <!--View Controller-->
+        <!--Space Image View Controller-->
         <scene sceneID="whQ-5d-Gdr">
             <objects>
-                <viewController id="Ze5-gT-mDh" sceneMemberID="viewController">
+                <viewController id="Ze5-gT-mDh" customClass="OWSpaceImageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fee-S4-mhb"/>
                         <viewControllerLayoutGuide type="bottom" id="2m2-Di-84H"/>
@@ -63,9 +63,18 @@
                     <view key="view" contentMode="scaleToFill" id="Gqr-AX-geh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView appearanceType="aqua" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xtt-is-R3Q">
+                                <rect key="frame" x="0.0" y="66" width="320" height="502"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Uvl-LE-qVX"/>
+                    <connections>
+                        <outlet property="scrollView" destination="xtt-is-R3Q" id="et8-DP-MJ8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zgm-bo-L9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
