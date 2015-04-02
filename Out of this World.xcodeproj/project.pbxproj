@@ -34,6 +34,7 @@
 		96A9F80C1AC07615006F8C3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96A9F80A1AC07615006F8C3F /* InfoPlist.strings */; };
 		96A9F80E1AC07615006F8C3F /* Out_of_this_WorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A9F80D1AC07615006F8C3F /* Out_of_this_WorldTests.m */; };
 		96A9F81C1AC07941006F8C3F /* OWOuterSpaceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A9F81B1AC07941006F8C3F /* OWOuterSpaceTableViewController.m */; };
+		96FB1A0C1ACDAA73001F6D7F /* OWSpaceDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FB1A0B1ACDAA73001F6D7F /* OWSpaceDataViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,8 @@
 		96A9F80D1AC07615006F8C3F /* Out_of_this_WorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Out_of_this_WorldTests.m; sourceTree = "<group>"; };
 		96A9F81A1AC07941006F8C3F /* OWOuterSpaceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWOuterSpaceTableViewController.h; sourceTree = "<group>"; };
 		96A9F81B1AC07941006F8C3F /* OWOuterSpaceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWOuterSpaceTableViewController.m; sourceTree = "<group>"; };
+		96FB1A0A1ACDAA73001F6D7F /* OWSpaceDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWSpaceDataViewController.h; sourceTree = "<group>"; };
+		96FB1A0B1ACDAA73001F6D7F /* OWSpaceDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWSpaceDataViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,8 @@
 				965AED281AC469E1007ED797 /* OWSpaceObject.m */,
 				96A9F7F21AC07615006F8C3F /* OWAppDelegate.m */,
 				96A9F7F41AC07615006F8C3F /* Main.storyboard */,
+				96FB1A0A1ACDAA73001F6D7F /* OWSpaceDataViewController.h */,
+				96FB1A0B1ACDAA73001F6D7F /* OWSpaceDataViewController.m */,
 				9638638A1AC6FA80008A790E /* OWSpaceImageViewController.h */,
 				9638638B1AC6FA80008A790E /* OWSpaceImageViewController.m */,
 				96A9F81A1AC07941006F8C3F /* OWOuterSpaceTableViewController.h */,
@@ -318,6 +323,7 @@
 				96A9F7F31AC07615006F8C3F /* OWAppDelegate.m in Sources */,
 				96A9F7EF1AC07615006F8C3F /* main.m in Sources */,
 				963B0EF11AC1CCC900CE5E31 /* AstronomicalData.m in Sources */,
+				96FB1A0C1ACDAA73001F6D7F /* OWSpaceDataViewController.m in Sources */,
 				9638638C1AC6FA80008A790E /* OWSpaceImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
