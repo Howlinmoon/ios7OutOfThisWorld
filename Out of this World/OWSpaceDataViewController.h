@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OWSpaceDataViewController : UIViewController
+@interface OWSpaceDataViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+
+
 
 
 @end
