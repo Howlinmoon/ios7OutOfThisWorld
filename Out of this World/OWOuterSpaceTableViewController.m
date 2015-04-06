@@ -145,6 +145,14 @@
 }
 
 
+#pragma mark UITableView Delegate
+-(void) tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
+    
+    NSLog(@"Accessory button was clicked, row: %i", indexPath.row);
+    
+}
+
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
