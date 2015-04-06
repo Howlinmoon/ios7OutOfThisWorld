@@ -10,6 +10,7 @@
 #import "AstronomicalData.h"
 #import "OWSpaceObject.h"
 #import "OWSpaceImageViewController.h"
+#import "OWSpaceDataViewController.h"
 
 @interface OWOuterSpaceTableViewController ()
 
@@ -89,17 +90,30 @@
 }
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // In here, we are handling two completely different segues - by determing first who is calling us.
+    
     NSLog(@"%@", sender);
     if ([sender isKindOfClass:[UITableViewCell class]]) {
         NSLog(@"Confirmed - this is from a table view cell");
         if ([segue.destinationViewController isKindOfClass:[OWSpaceImageViewController class]]) {
-            
+            NSLog(@"We are headed for the planetary image view controller");
             OWSpaceImageViewController *nextViewController = segue.destinationViewController;
             NSIndexPath *path = [self.tableView indexPathForCell:sender];
             OWSpaceObject *selectedObject = self.planets[path.row];
             nextViewController.spaceObject = selectedObject;
             
             
+        }
+    }
+    
+    if ([sender isKindOfClass:[NSIndexPath class]]) {
+        if ([segue.destinationViewController isKindOfClass:[OWSpaceDataViewController class]]) {
+            NSLog(@"We are headed for the space data view controller");
+            
+            OWSpaceDataViewController *targetViewController = segue.destinationViewController;
+            NSIndexPath *path = sender;
+            OWSpaceObject *selectedObject = self.planets[path.row];
+            targetViewController.spaceObject = selectedObject;
         }
     }
 }
@@ -149,7 +163,7 @@
 -(void) tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
     
     NSLog(@"Accessory button was clicked, row: %i", indexPath.row);
-    
+    [self performSegueWithIdentifier:@"push to space data" sender:indexPath];
 }
 
 

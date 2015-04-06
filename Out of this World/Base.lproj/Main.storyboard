@@ -47,6 +47,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Planets" id="sN9-VH-qkm"/>
+                    <connections>
+                        <segue destination="E8P-He-Bsi" kind="push" identifier="push to space data" id="QIv-oZ-Hes"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QbR-kL-POt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -71,7 +74,7 @@
                                 <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell appearanceType="aqua" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DataCell" textLabel="SSS-60-Zcq" detailTextLabel="PQn-oF-9Bq" style="IBUITableViewCellStyleValue1" id="l5B-c8-9b4">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="l5B-c8-9b4" id="Rfn-ua-RIK">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -104,6 +107,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="qXe-in-lXd"/>
                     <connections>
                         <outlet property="tableView" destination="IjS-X3-Qxf" id="Qn9-X0-BPV"/>
                     </connections>
