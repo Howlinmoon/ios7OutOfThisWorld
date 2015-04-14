@@ -116,6 +116,13 @@
             targetViewController.spaceObject = selectedObject;
         }
     }
+    
+    
+    if ([segue.destinationViewController isKindOfClass:
+         [OWAddSpaceObjectViewController class]]) {
+        OWAddSpaceObjectViewController *addSpaceObjectVC = segue.destinationViewController;
+        addSpaceObjectVC.delegate = self;
+    }
 }
 
 
@@ -123,6 +130,17 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - OWAddSpaceObjectViewController Delegate
+-(void) didCancle {
+    NSLog(@"didCancel was called");
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void) addSpaceObject {
+    NSLog(@"addSpaceObject was called");
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - Table view data source
