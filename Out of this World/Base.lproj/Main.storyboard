@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="B7I-HW-BoV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="19s-5Y-fT2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -46,7 +46,13 @@
                             <outlet property="delegate" destination="c0W-N2-eX9" id="DET-tG-5Pk"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Planets" id="sN9-VH-qkm"/>
+                    <navigationItem key="navigationItem" title="Planets" id="sN9-VH-qkm">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="1rg-wQ-x4I">
+                            <connections>
+                                <segue destination="B7I-HW-BoV" kind="modal" id="fFd-q4-Rdv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="E8P-He-Bsi" kind="push" identifier="push to space data" id="QIv-oZ-Hes"/>
                     </connections>
