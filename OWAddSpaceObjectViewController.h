@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+# import "OWSpaceObject.h"
 
 @protocol OWAddSpaceObjectViewControllerDelegate <NSObject>
 
