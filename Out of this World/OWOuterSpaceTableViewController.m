@@ -138,10 +138,15 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
--(void) addSpaceObject {
+-(void) addSpaceObject:(OWSpaceObject *)spaceObject {
+    if (!self.addedSpaceObjects) {
+        self.addedSpaceObjects = [[NSMutableArray alloc] init];
+    }
+    [self.addedSpaceObjects addObject:spaceObject];
     NSLog(@"addSpaceObject was called");
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 
 #pragma mark - Table view data source
 

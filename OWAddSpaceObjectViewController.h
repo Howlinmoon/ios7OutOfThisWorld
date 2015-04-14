@@ -12,7 +12,7 @@
 @protocol OWAddSpaceObjectViewControllerDelegate <NSObject>
 
 @required
--(void) addSpaceObject;
+-(void) addSpaceObject:(OWSpaceObject *) spaceObject;
 -(void) didCancel;
 
 

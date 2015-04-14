@@ -55,8 +55,9 @@
 }
 
 - (IBAction)addButtonPressed:(UIButton *)sender {
+    OWSpaceObject *newSpaceObject = [self returnNewSpaceObject];
     
-    [self.delegate addSpaceObject];
+    [self.delegate addSpaceObject:newSpaceObject];
     
 }
 
