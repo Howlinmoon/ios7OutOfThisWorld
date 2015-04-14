@@ -133,7 +133,7 @@
 }
 
 #pragma mark - OWAddSpaceObjectViewController Delegate
--(void) didCancle {
+-(void) didCancel {
     NSLog(@"didCancel was called");
     [self dismissViewControllerAnimated:YES completion:nil];
 }
