@@ -99,7 +99,16 @@
             NSLog(@"We are headed for the planetary image view controller");
             OWSpaceImageViewController *nextViewController = segue.destinationViewController;
             NSIndexPath *path = [self.tableView indexPathForCell:sender];
-            OWSpaceObject *selectedObject = self.planets[path.row];
+            OWSpaceObject *selectedObject;
+            
+            NSLog(@"Path.section = %i", path.section);
+            
+            if (path.section == 0) {
+                selectedObject = self.planets[path.row];
+            } else if (path.section == 1) {
+                selectedObject = self.addedSpaceObjects[path.row];
+            }
+            
             nextViewController.spaceObject = selectedObject;
             
             
@@ -112,7 +121,16 @@
             
             OWSpaceDataViewController *targetViewController = segue.destinationViewController;
             NSIndexPath *path = sender;
-            OWSpaceObject *selectedObject = self.planets[path.row];
+            OWSpaceObject *selectedObject;
+            
+            NSLog(@"Path.section = %i", path.section);
+            
+            if (path.section == 0) {
+                selectedObject = self.planets[path.row];
+            } else if (path.section == 1) {
+                selectedObject = self.addedSpaceObjects[path.row];
+            }
+
             targetViewController.spaceObject = selectedObject;
         }
     }
