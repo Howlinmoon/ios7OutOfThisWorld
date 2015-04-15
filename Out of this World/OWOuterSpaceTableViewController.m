@@ -18,6 +18,31 @@
 
 @implementation OWOuterSpaceTableViewController
 
+
+# pragma mark - Lazy instantiation of properties
+-(NSMutableArray *) planets {
+    
+    // Does planets already exist?
+    if (!_planets) {
+        // not yet - so create it
+        _planets = [[NSMutableArray alloc] init];
+    }
+    
+    return _planets;
+}
+
+-(NSMutableArray *) addedSpaceObjects {
+    
+    // Does addedSpaceObjects already exist?
+    if (!_addedSpaceObjects) {
+        // not yet - so create it
+        _addedSpaceObjects = [[NSMutableArray alloc] init];
+    }
+    
+    return _addedSpaceObjects;
+}
+
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -59,7 +84,9 @@
     [self.planets addObject:planet8];
 */
     
-    self.planets = [[NSMutableArray alloc] init];
+    // Old style alloc and init - not needed due to laziness above
+    // self.planets = [[NSMutableArray alloc] init];
+    
     for (NSMutableDictionary *planetData in [AstronomicalData allKnownPlanets]) {
         NSString *imageName = [NSString stringWithFormat:@"%@.jpg", planetData[PLANET_NAME]];
         OWSpaceObject *planet = [[OWSpaceObject alloc] initWithData:planetData andImage:[UIImage imageNamed:imageName]];
@@ -157,9 +184,11 @@
 }
 
 -(void) addSpaceObject:(OWSpaceObject *)spaceObject {
-    if (!self.addedSpaceObjects) {
-        self.addedSpaceObjects = [[NSMutableArray alloc] init];
-    }
+    // Old style alloc and init - deprecated due to laziness above
+//    if (!self.addedSpaceObjects) {
+//        self.addedSpaceObjects = [[NSMutableArray alloc] init];
+//    }
+    
     [self.addedSpaceObjects addObject:spaceObject];
     NSLog(@"addSpaceObject was called");
     [self dismissViewControllerAnimated:YES completion:nil];
