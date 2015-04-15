@@ -184,6 +184,8 @@
         OWSpaceObject *planet = [self.addedSpaceObjects objectAtIndex:indexPath.row];
         cell.textLabel.text = planet.name;
         cell.detailTextLabel.text = planet.nickname;
+        cell.imageView.image = planet.spaceImage;
+        
         
     } else {
         OWSpaceObject *planet = [self.planets objectAtIndex:indexPath.row];
